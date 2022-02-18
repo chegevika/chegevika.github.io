@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(177, 196, 218);}
+p{font-style: italic;}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+h1{color:rgb(136, 39, 39);}
+h2{color: rgb(165, 42, 58);}
