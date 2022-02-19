@@ -1,6 +1,9 @@
 body {
     background-color: rgb(177, 196, 218);}
+    body{border-style: solid;}
+body{border-color: #6058cd;}
 p{font-style: italic;}
+p{margin-left: 20px;}
 IMG.displayed {
     display: block;
     margin-left: auto;
