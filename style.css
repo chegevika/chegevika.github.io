@@ -1,12 +1,28 @@
 body {
-    background-color: rgb(177, 196, 218);}
-    body{border-style: solid;}
-body{border-color: #6058cd;}
+    background-color: rgb(230, 237, 245);}
+.images {
+    position: relative;
+}
+.dobropozhalovat {
+    position:absolute;
+    bottom:48px;
+    left:40%;
+    top: 10px;
+}
+body{border-style: solid;}
+body{border-color: #e49d40;}
 p{font-style: italic;}
 p{margin-left: 20px;}
 IMG.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto }
-h1{color:rgb(136, 39, 39);}
-h2{color: rgb(165, 42, 58);}
+h1{color:rgba(182, 109, 0, 0.788);}
+h2{color: rgba(175, 105, 0, 0.788);}
+.footer {
+    background: rgb(103, 148, 150);
+   left:0;
+   bottom:0;
+   width:100%;
+   height: 100px;
+    }
