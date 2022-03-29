@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(230, 237, 245);}
+    background-color: rgb(230, 237, 245);}
 .images {
     position: relative;
 }
@@ -11,18 +11,71 @@ body {
 }
 body{border-style: solid;}
 body{border-color: #e49d40;}
+body{display: flex;
+    flex-direction: column;}
 p{font-style: italic;}
 p{margin-left: 20px;}
+li{font-style: italic;}
 IMG.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto }
 h1{color:rgba(182, 109, 0, 0.788);}
-h2{color: rgba(175, 105, 0, 0.788);}
-.footer {
-    background: rgb(103, 148, 150);
+h2{color: rgba(175, 105, 0, 0.788);} 
+.aboutmeclass{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80em;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 30px;
+        grid-auto-rows: 100px;
+        grid-template-areas:
+          "a a a a b b b b"
+          "a a a a b b b b"
+          "c c c c b b b b"
+          "c c c c b b b b";
+        align-items: start;
+      }
+.block1{
+    grid-area: a; 
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 600px;    
+    border-style: double;
+    text-align: center;
+    box-shadow: -6px -6px #a7a7a7;
+}
+.block2{ grid-area: c;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 600px;  
+    text-align: center; 
+    height: auto;
+    border-style: double;
+    box-shadow: -6px -6px #a7a7a7;
+}
+.block3{ grid-area: b; 
+    margin-top: 130px;
+    width: 600px;  
+    text-align: center; 
+    height: auto;
+    border-style: double;
+    box-shadow: -6px -6px #a7a7a7; 
+}
+.footer{
+    background: rgb(103, 149, 151);
+    margin-top: 30px;
    left:0;
    bottom:0;
    width:100%;
    height: 100px;
+    }
+.icons {
+    display: flex;
+    flex-direction: row;}
+    .email{
+        margin-left: 50px;
     }
