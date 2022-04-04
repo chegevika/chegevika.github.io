@@ -10,25 +10,30 @@ h1{
     text-transform: uppercase;
     padding-bottom: 5px;
     border-bottom:3px solid gray ;
+    border-color: gold;
 }
 form{
     margin: 0 auto;
     background: rgb(103, 95, 95);
     width: 450px;
-    height: 400px;
+    height: 600px;
     padding: 20px;
     box-shadow: 2px,2px,5px,rgba(0,0,0,0.82);
 }
 .group{
     margin: 10px;
-    padding: 5px;
+    cursor: help;
 }
-.password {
-   margin-right: 200px;
-}
-.e-mail {margin-right: 200px;}
-.text{margin-right: 200px;
-}
+    .shake:invalid{
+        border:10px solid red;
+        animation:shake 300ms;
+    }
+    @keyframes shake{
+    25%{transform: translateX(10px);}
+    50%{transform: translateX(-10px);}
+    75%{transform: translateX(10px);}
+    }
+    
 .label{
     padding-left:10px;
     text-transform:uppercase;
@@ -61,5 +66,4 @@ form{
         font-weight: bold;
         transform: scale(1,1);
     }
-
 
