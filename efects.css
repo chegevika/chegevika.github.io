@@ -65,12 +65,23 @@ font-size: 30px;
 .link{color:aliceblue;
     font-size:20px;
     position: absolute;
+    text-decoration: none;
 top: 10%;
 left:80%;
     color: aliceblue;
-    line-height: 10px;
     text-align: right;}
-
+.link:hover{
+      color: goldenrod;
+      text-decoration:underline;
+      opacity:80;
+      font-weight: bold;
+      transform: scale(1,1);}
+.registration{
+  color:aliceblue;
+  font-size:20px;
+  text-align: center;
+  float: unset;
+  line-height: 10px;}
 @keyframes text {
     0%{
         color: aliceblue;
@@ -125,8 +136,7 @@ left:80%;
         background-color: rgb(73, 73, 73);
       }
       .dropup:hover .dropup-content {
-        display:table;
-      }
-
-      .dropup:hover  .contacts_button {
-      } 
+        display:table;}
+        .dropup-content a:hover {
+          color: gold;
+        }
