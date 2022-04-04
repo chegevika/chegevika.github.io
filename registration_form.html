@@ -11,24 +11,34 @@
     <form action="">
 <h1 title="Введите ваши персональные данные:">Регистрация</h1>
 <div class="group">
-    <label for="">Имя пользователя</label>
-    <input class="text">
+    <label for="Username">Имя пользователя</label>
+    <p>
+        <input type="text"
+        pattern="^[А-Яа-яЁё\s]+$" placeholder="Username" title="Используйте только киррилицу" required>
+    </p>
     </div>
 
 <div class="group">
     <label for="">Пароль</label>
-    <input class="password">
+    <p>
+        <input type="password" class="shake" placeholder="password" pattern="^[ 0-9]+$" title= "Пароль должен содержать только цифры">    
+    </p>
 </div>
 <div class="group">
     <label for="">Повторите ваш пароль</label>
-    <input class="password">
+    <p>
+        <input type="password" class="shake" placeholder="password" pattern="^[ 0-9]+$" title= "Пароль должен содержать только цифры" >
+    </p>
+    
 </div>
 <div class="group">
     <label for="">Электронная почта</label>
-    <input class="e-mail">
+    <p>
+        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email" required/>    
+    </p>
 </div>
 <div class="group">
-    <center><button>Завершить</button>
+    <center><button>Шалость совершена!</button>
     </center>
 </div>
     </form>
