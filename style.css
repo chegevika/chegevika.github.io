@@ -1,32 +1,52 @@
-body {
-    background-color: rgb(230, 237, 245);}
-.images {
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+.images_background {
     position: relative;
 }
-.dobropozhalovat {
+.napolnenie{
     position:absolute;
+    margin-top: 30px; 
+}
+.home1{
+    margin-left: -160%;
+    margin-top: 15px;
+}
+
+.dobropozhalovat {
+    position:fixed;
     bottom:48px;
     left:40%;
     top: 10px;
+}
+
+.myphoto{
+    margin-top: 70px;
+    margin-left: 20px;
 }
 .registration{
 position: absolute;
 left: 700px;;top:15px;
 cursor: pointer;
+text-decoration: none;
 height: 30px;
 width:30px;
 text-transform: uppercase;
 font-size: 15px;
-color: black;
+color: rgb(247, 242, 242);
 box-shadow: 2px,2px,5px,rgba(0,0,0,0.82);
 }
 .registration:hover{
     opacity:80;
     font-weight: bold;
     transform: scale(1,1);
+    color: goldenrod;
+    text-decoration:underline;
 }
-body{border-style: solid;}
-body{border-color: #e49d40;}
+body{border-style:double;}
+body{border-color: #e7e0e0;
+border-width: 4px;}
 body{display: flex;
     flex-direction: column;}
 p{font-style: italic;}
@@ -36,13 +56,28 @@ IMG.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto }
-h1{color:rgba(182, 109, 0, 0.788);}
-h2{color: rgba(175, 105, 0, 0.788);} 
+h1{color:#fff6e5;
+letter-spacing: 3px;}
+h2{color: #fff6e5;}
+.aboutme{
+    margin-top: 70px;
+}
 .aboutmeclass{
-        margin-left: auto;
-        margin-right: auto;
-        width: 80em;
+    transform: translate(30%, 25%);
+    width: 60%;
+    margin-top: 0;
     }
+    .home{
+        overflow:visible;
+       }
+       .home img {
+        transition: 1s; 
+       }
+       .home img:hover {
+        transform: scale(1.2); /* Увеличиваем масштаб */
+        animation: slide 3s ease-in-out infinite;
+       }
+ 
     .wrapper {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -54,6 +89,7 @@ h2{color: rgba(175, 105, 0, 0.788);}
           "c c c c b b b b"
           "c c c c b b b b";
         align-items: start;
+        transform: translate(-20%, 35%)
       }
 .block1{
     grid-area: a; 
@@ -63,12 +99,12 @@ h2{color: rgba(175, 105, 0, 0.788);}
     border-style: double;
     text-align: center;
     box-shadow: -6px -6px #a7a7a7;
-     transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
 }
 .block1:hover{
     transition:all 2s ease 0s;
     top:2ps;
-    background-color: #9f8d8d;
+    background-color: #786d6d;
 }
 .block2{ grid-area: c;
     margin-left: 50px;
@@ -83,7 +119,7 @@ h2{color: rgba(175, 105, 0, 0.788);}
 .block2:hover{
     transition:all 2s ease 0s;
     top:2ps;
-    background-color: #9f8d8d;
+    background-color: #786d6d;
 }
 .block3{ grid-area: b; 
     margin-top: 130px;
@@ -97,18 +133,78 @@ h2{color: rgba(175, 105, 0, 0.788);}
 .block3:hover{
     transition:all 2s ease 0s;
     top:2ps;
-    background-color: #9f8d8d;}
+    background-color: #786d6d;}
 .footer{
-    background: rgb(103, 149, 151);
-    margin-top: 30px;
+    background: rgb(65, 65, 65);
+    margin-top: 0px;
    left:0;
-   bottom:0;
+   bottom:10px;
    width:100%;
    height: 100px;
     }
 .icons {
+    margin-top: 10px;
     display: flex;
-    flex-direction: row;}
+    flex-direction: row;
+    text-decoration: none;
+    cursor: pointer;}
     .email{
+       
         margin-left: 50px;
+        text-decoration: none;
+        cursor: pointer;
+        
     }
+    .email:hover{
+        color: goldenrod;
+        text-decoration:underline;
+        opacity:80;
+        font-weight: bold;
+        transform: scale(1,1);
+    }
+    .tel{
+       
+        text-decoration: none;
+        cursor: pointer;
+        
+    }
+    .tel:hover{
+        color: goldenrod;
+        text-decoration:underline;
+        opacity:80;
+        font-weight: bold;
+        transform: scale(1,1);
+    }
+    .insta{
+            text-decoration: none;
+            cursor: pointer;
+            }
+        .insta:hover{
+            color: goldenrod;
+            text-decoration:underline;
+            opacity:80;
+            font-weight: bold;
+            transform: scale(1,1);
+        }
+    .Up{ text-decoration: none;
+        cursor: pointer;
+    }
+    .Up:hover{
+        color: goldenrod;
+        text-decoration:underline;
+        opacity:80;
+        font-weight: bold;
+        transform: scale(1,1);}
+        .neon {
+            color: #fff;
+            text-shadow:
+              0 0 5px #fff,
+              0 0 10px #fff,
+              0 0 20px #fff,
+              0 0 40px #0ff,
+              0 0 80px #0ff,
+              0 0 90px #0ff,
+              0 0 100px #0ff,
+              0 0 150px #0ff;
+          }
+          
