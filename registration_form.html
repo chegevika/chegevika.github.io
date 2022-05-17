@@ -9,27 +9,22 @@
     </head>
     <body>
     <form action="">
-<h1 title="Введите ваши персональные данные:">Регистрация</h1>
+<h1 title="Введите ваши персональные данные:">ЗАЯВКА</h1>
 <div class="group">
-    <label for="Username">Имя пользователя</label>
+    <label for="Username">Имя</label>
     <p>
         <input type="text"
         pattern="^[А-Яа-яЁё\s]+$" placeholder="Username" title="Используйте только киррилицу" required>
     </p>
     </div>
-
-<div class="group">
-    <label for="">Пароль</label>
-    <p>
-        <input type="password" class="shake" placeholder="password" pattern="^[ 0-9]+$" title= "Пароль должен содержать только цифры">    
-    </p>
 </div>
 <div class="group">
-    <label for="">Повторите ваш пароль</label>
+    <label for="Username">Фамилия</label>
     <p>
-        <input type="password" class="shake" placeholder="password" pattern="^[ 0-9]+$" title= "Пароль должен содержать только цифры" >
+        <input type="text"
+        pattern="^[А-Яа-яЁё\s]+$" placeholder="Username" title="Используйте только киррилицу" required>
     </p>
-    
+    </div>
 </div>
 <div class="group">
     <label for="">Электронная почта</label>
@@ -37,8 +32,37 @@
         <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email" required/>    
     </p>
 </div>
+<select class="form-select" aria-label="Default select example">
+    <option selected>Ваш пол</option>
+    <option value="1">Мужчина</option>
+    <option value="2">Женщина</option>
+  </select>
+  <div class="group">
+    <label for="Username">Номер телефона</label>
+    <br><br>
+  <input type="tel" name="phone_number" list="tel-list" placeholder="+38 (0xx) xxx-xx-xx" pattern="\+3\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"></p>
+</div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Срочная задача
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      Несрочная задача
+    </label>
+  </div>
+  
+
 <div class="group">
-    <center><button>Шалость совершена!</button>
+    <center>
+        <div class="btn">
+          <form>
+        <button type="button" class="btn btn-secondary" onClick='location.href="../projects/registration_successful.html"'>Оформить заявку</button>
+      </form>
+      </div>
     </center>
 </div>
     </form>
